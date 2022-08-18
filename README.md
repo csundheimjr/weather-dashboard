@@ -1,18 +1,19 @@
-# Work day scheduler
+# Weather Dashboard
 
 ## Description
 
-This is a simple daily scheduler, with color coding for time of: (past, present, future) and a local save feature. This is a learning exersize in JSQUERY, BOOTSTRAP, and functions.
+This is a simple weather dashboard. When you enter your loaction the page shows you the current weather, and a 5 day outlook.
 
 ## Installation
 
-https://github.com/csundheimjr/work-day-scheduler
-
-https://csundheimjr.github.io/work-day-scheduler/
+html link:
+https://csundheimjr.github.io/weather-dashboard/
+repository link:
+https://github.com/csundheimjr/weather-dashboard
 
 ## Usage
 
-Input your tasks, and save.
+Input your location and view the current and future weather.
 
 [work day list](assets/images/screenshot.png)
 
