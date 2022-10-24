@@ -2,30 +2,93 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="      
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Work Day Scheduler</title>
   </head>
-
   <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <Header>Weather Dashboard</Header>
+    <aside id="search">
+      <form id="city-search">
+        <h2>Enter City:</h2>
+        <input type="text" name="city" id="search-input" />
+        <button type="button" class="btn btn-info">Search</button>
+      </form>      
+      <div id="saved-cities"></div>
+    </aside>
+
+    <section id="weather-display">
+      <div id="current-weather">
+        <div id="icon">
+          <h2 id="cityname"></h2>
+        </div>
+        <p>Current Temp: <span class="data" id="temp"></span></p>
+        <p>Wind Speed: <span class="data" id="wind"></span></p>
+        <p>Humidity: <span class="data" id="humidity"></span></p>
+        <p>UV Index: <span class="data" id="UV"></span></p>
+      </div>
+    </section>
+    <section id="forecast-display">
+      <div class="container-fluid row justify-content:space-evenly" id="forecast">
+        
+          <div id="card-1" class="card col-6 col-md-2">
+            <h2 id="date1"></h2>
+              <h3 img="icon1">
+              <h3 id="temp1"></h3>
+              <h3 id="wind1"></h3>
+              <h3 id="humidity1"></h3>
+          </div>
+          <div id="card-2" class="card col-6 col-md-2">
+            <h2 id="date2"></h2>
+              <h3 img="icon2">
+              <h3 id="temp2"></h3>
+              <h3 id="wind2"></h3>
+              <h3 id="humidity2"></h3>
+          </div>
+          <div id="card3" class="card col-6 col-md-2">
+            <h2 id="date3"></h2>
+              <h3 img="icon3">
+              <h3 id="temp3"></h3>
+              <h3 id="wind3"></h3>
+              <h3 id="humidity3"></h3>
+          </div>
+          <div id="card-4" class="card col-6 col-md-2">
+            <h2 id="date4"></h2>
+              <h3 img="icon4">
+              <h3 id="temp4"></h3>
+              <h3 id="wind4"></h3>
+              <h3 id="humidity4"></h3>
+          </div>
+          <div id="card-5" class="card col-6 col-md-2">
+            <h2 id="date5"></h2>
+              <h3 img="icon5">
+              <h3 id="temp5"></h3>
+              <h3 id="wind5"></h3>
+              <h3 id="humidity5"></h3>
+          
+        
+        
+      </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="./assets/js/script.js"></script>
-  </body>
+	</body>
 </html>
