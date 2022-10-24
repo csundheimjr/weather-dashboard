@@ -7,7 +7,7 @@ This is a simple weather dashboard. When you enter your loaction the page shows 
 ## Installation
 
 html link:
-https://carl-weather-dashboard.herokuapp.com/
+https://csundheimjr.github.io/weather-dashboard/
 repository link:
 https://github.com/csundheimjr/weather-dashboard
 
